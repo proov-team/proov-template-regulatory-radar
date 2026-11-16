@@ -1,0 +1,15 @@
+# Regulatory Radar — Python dependencies
+#
+# These cover the FIND (fetch/cache), UNDERSTAND (parse), and testing needs. Add whatever
+# your chosen sources and AI-agent SDK require (e.g. an LLM client for the extract stage).
+
+requests>=2.31          # HTTP client for the FIND stage (fetch official sources)
+beautifulsoup4>=4.12     # parse rendered HTML pages where an API/RSS isn't available
+lxml>=5.1                # fast parser backend for BeautifulSoup / XML feeds
+feedparser>=6.0          # read RSS/Atom feeds (EUR-Lex OJ, ECHA news, Safety Gate)
+python-dateutil>=2.9     # robust date parsing for deadlines / effective dates
+pytest>=8.0              # test runner (write some tests — the repo craft criterion checks)
+
+# Optional — uncomment what you use:
+# openai>=1.0            # if you drive extraction via an OpenAI-compatible LLM client
+# anthropic>=0.30        # if you drive extraction via Claude

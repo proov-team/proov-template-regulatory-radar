@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+*.egg-info/
+
+# Secrets — never commit API keys for your LLM / notification provider
+.env
+.env.*
+secrets.json
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+
+# NOTE: do NOT ignore data/cache/ or findings/ — your cached source fetches and emitted
+# findings are EVIDENCE the grader reads. Commit them.
